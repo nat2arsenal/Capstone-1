@@ -389,8 +389,10 @@ section {
 }
 .portfolios .portfolio-item {
   position: relative;
+  background-color: var(--color-grey-5);
   border-radius: 15px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
 }
 .portfolios .portfolio-item .project-image {
   width: 100%;
@@ -455,7 +457,6 @@ section {
 .portfolios .portfolio-item .project-text {
   padding: 1.1rem;
   border-top: 8px solid var(--color-secondary);
-  background-color: var(--color-grey-5);
   border-radius: 0 0 15px 15px;
 }
 .portfolios .portfolio-item .project-text h4 {
