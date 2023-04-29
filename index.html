@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nathaniel || Portfolio</title>
+
+    <title>Nathaniel || Developer Portfolio</title>
+
+    <!-- Icon for the title bar -->
+    <link rel="website icon" type="png" href="./img/nawong.jpg" />
+
+    <!-- CSS link -->
     <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -15,11 +29,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('b1DAx0s1chMoisREM');
+      })();
+    </script>
   </head>
+
   <body class="main-content">
     <header class="container header active" id="home">
       <div class="header-content">
@@ -264,6 +286,7 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Code</p>
                     <i class="fab fa-github"></i>
                   </a>
                   <a
@@ -271,13 +294,19 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Project</p>
                     <i class="fas fa-video"></i>
                   </a>
                 </div>
               </div>
             </div>
             <div class="project-text">
-              <h4>Product Preview Component</h4>
+              <a
+                href="https://frontmentor-io-product-preview-card-component.vercel.app/"
+                target="_blank"
+              >
+                <h4>Product Preview Component</h4>
+              </a>
               <p>
                 A challenge from frontendmentor.io where the design and other
                 necessary details were given. This is a responsive component and
@@ -297,6 +326,7 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Code</p>
                     <i class="fab fa-github"></i>
                   </a>
                   <a
@@ -304,13 +334,19 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Project</p>
                     <i class="fas fa-video"></i>
                   </a>
                 </div>
               </div>
             </div>
             <div class="project-text">
-              <h4>Results Summary Component</h4>
+              <a
+                href="https://frontmentor-io-results-summary-component.vercel.app/"
+                target="_blank"
+              >
+                <h4>Results Summary Component</h4>
+              </a>
               <p>
                 A challenge from frontendmentor.io where the design and other
                 necessary details were given. This is a responsive component and
@@ -330,6 +366,7 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Code</p>
                     <i class="fab fa-github"></i>
                   </a>
                   <a
@@ -337,13 +374,19 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Project</p>
                     <i class="fas fa-video"></i>
                   </a>
                 </div>
               </div>
             </div>
             <div class="project-text">
-              <h4>QR Code Component</h4>
+              <a
+                href="https://frontendmentor-io-qr-code-challenge.vercel.app/"
+                target="_blank"
+              >
+                <h4>QR Code Component</h4>
+              </a>
               <p>
                 A challenge from frontendmentor.io where the design and other
                 necessary details were given. The tools used were HTML and CSS.
@@ -362,6 +405,7 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Code</p>
                     <i class="fab fa-github"></i>
                   </a>
                   <a
@@ -369,13 +413,19 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Project</p>
                     <i class="fas fa-video"></i>
                   </a>
                 </div>
               </div>
             </div>
             <div class="project-text">
-              <h4>E-commerce Website</h4>
+              <a
+                href="https://e-commerce-nat2arsenal.vercel.app/"
+                target="_blank"
+              >
+                <h4>E-commerce Website</h4>
+              </a>
               <p>
                 An e-commerce app created by using MERN stack along with
                 bootstrap as the CSS Framework. The app lets you register,
@@ -397,6 +447,7 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Code</p>
                     <i class="fab fa-github"></i>
                   </a>
                   <a
@@ -404,13 +455,19 @@
                     target="_blank"
                     class="icon"
                   >
+                    <p>View Project</p>
                     <i class="fas fa-video"></i>
                   </a>
                 </div>
               </div>
             </div>
             <div class="project-text">
-              <h4>E-commerce Backend</h4>
+              <a
+                href="https://dashboard.render.com/web/srv-cebfqvha6gdichkn8o10/"
+                target="_blank"
+              >
+                <h4>E-commerce Backend</h4>
+              </a>
               <p>
                 Created a backend code for an e-commerce app using Express.js
                 and Node.js, which then connected to a MongoDB database. The API
@@ -503,29 +560,43 @@
               </div>
             </div>
             <div class="bottom-contact">
-              <form action="" class="contact-form">
+              <div class="contact-form">
                 <div class="input-control i-c-2">
-                  <input type="text" required placeholder="YOUR NAME" />
-                  <input type="email" required placeholder="YOUR EMAIL" />
+                  <input
+                    type="text"
+                    id="sender_name"
+                    required
+                    placeholder="YOUR NAME"
+                  />
+                  <input
+                    type="email"
+                    id="sender_email"
+                    required
+                    placeholder="YOUR EMAIL"
+                  />
                 </div>
                 <div class="input-control">
-                  <input type="text" required placeholder="ENTER SUBJECT" />
+                  <input
+                    type="text"
+                    id="email_subject"
+                    required
+                    placeholder="ENTER SUBJECT"
+                  />
                 </div>
                 <div class="input-control">
                   <textarea
-                    name=""
-                    id=""
+                    id="message"
                     cols="15"
                     rows="8"
                     placeholder="Message Here..."
                   ></textarea>
                 </div>
                 <div class="submit-btn">
-                  <button type="submit">
+                  <button onclick="SendMail()">
                     <p><strong>SEND</strong></p>
                   </button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>

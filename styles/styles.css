@@ -208,12 +208,13 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.4s ease-in-out;
+  transition: all 1s ease-in-out;
   border-radius: 100%;
   filter: grayscale(0);
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(50%);
+  transform: rotate(10deg);
 }
 .header-content .right-header {
   display: flex;
@@ -448,11 +449,21 @@ section {
   color: var(--color-white);
   margin: 0 1rem;
 }
+.portfolios .portfolio-item .project-image .hover-items .icons .icon p {
+  display: none;
+}
 .portfolios .portfolio-item .project-image .hover-items .icons .icon:hover {
   background-color: var(--color-white);
+  position: relative;
 }
 .portfolios .portfolio-item .project-image .hover-items .icons .icon:hover i {
   color: var(--color-primary);
+}
+.portfolios .portfolio-item .project-image .hover-items .icons .icon:hover p {
+  display: block;
+  position: absolute;
+  bottom: -4rem;
+  text-align: center;
 }
 .portfolios .portfolio-item .project-text {
   padding: 1.1rem;

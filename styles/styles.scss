@@ -212,11 +212,12 @@ section {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: all 0.4s ease-in-out;
+        transition: all 1s ease-in-out;
         border-radius: 100%;
         filter: grayscale(0);
         &:hover {
           filter: grayscale(50%);
+          transform: rotate(10deg);
         }
       }
     }
@@ -452,10 +453,20 @@ section {
               color: var(--color-white);
               margin: 0 1rem;
             }
+            p {
+              display: none;
+            }
             &:hover {
               background-color: var(--color-white);
+              position: relative;
               i {
                 color: var(--color-primary);
+              }
+              p {
+                display: block;
+                position: absolute;
+                bottom: -4rem;
+                text-align: center;
               }
             }
           }
@@ -466,7 +477,6 @@ section {
     .project-text {
       padding: 1.1rem;
       border-top: 8px solid var(--color-secondary);
-
       border-radius: 0 0 15px 15px;
       h4 {
         font-size: 1.5rem;
