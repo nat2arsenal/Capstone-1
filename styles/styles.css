@@ -129,12 +129,13 @@ section {
 }
 .controls :hover {
   background-color: var(--color-secondary);
-  position: relative;
+}
+.controls :hover i {
+  display: none;
 }
 .controls :hover p {
   display: block;
-  position: absolute;
-  top: -1.5rem;
+  background-color: rgba(0, 0, 0, 0);
 }
 .controls .active-btn {
   background-color: var(--color-secondary);
@@ -193,13 +194,13 @@ section {
 .header-content .left-header {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
 }
 .header-content .left-header .image {
   height: width;
   width: 60%;
   margin: auto;
-  background-color: var(--color-primary);
   transition: all 0.4s ease-in-out;
   overflow: hidden;
 }
@@ -212,9 +213,57 @@ section {
   border-radius: 100%;
   filter: grayscale(0);
 }
-.header-content .left-header .image img:hover {
+.header-content .left-header .image .hover-items {
+  display: none;
+}
+.header-content .left-header .image:hover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+.header-content .left-header .image:hover img {
   filter: grayscale(50%);
-  transform: rotate(10deg);
+}
+.header-content .left-header .image:hover .hover-items {
+  z-index: 100;
+  display: block;
+  position: absolute;
+  bottom: 11%;
+  right: 0;
+  width: 100%;
+}
+.header-content .left-header .image:hover .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header-content .left-header .image:hover .hover-items .icons .icon {
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  width: calc(2rem + 0.8vw);
+  height: calc(2rem + 0.8vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.header-content .left-header .image:hover .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+.header-content .left-header .image:hover .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+  position: relative;
+}
+.header-content .left-header .image:hover .hover-items .icons .icon:hover i {
+  color: var(--color-primary);
 }
 .header-content .right-header {
   display: flex;
@@ -379,8 +428,10 @@ section {
 }
 
 .port-text {
+  margin-top: 4rem;
   padding: 2rem 0;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .portfolios {
@@ -611,13 +662,19 @@ section {
   transform: translateY(-3px);
 }
 
-/*Independed components*/
+/*Other buttons*/
+.btns-con {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .btn-con {
   display: flex;
   align-self: flex-start;
+  justify-content: center;
+  margin-top: 1rem;
 }
-
-.main-btn {
+.btn-con .main-btn {
   border-radius: 30px;
   color: inherit;
   font-weight: 600;
@@ -628,10 +685,11 @@ section {
   align-items: center;
   overflow: hidden;
 }
-.main-btn .btn-text {
+.btn-con .main-btn .btn-text {
   padding: 0 2rem;
+  text-align: center;
 }
-.main-btn .btn-icon {
+.btn-con .main-btn .btn-icon {
   background-color: var(--color-secondary);
   display: flex;
   align-items: center;
@@ -639,7 +697,7 @@ section {
   border-radius: 50%;
   padding: 1rem;
 }
-.main-btn::before {
+.btn-con .main-btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -648,15 +706,20 @@ section {
   transition: all 0.4s ease-out;
   z-index: -1;
 }
-.main-btn:hover {
+.btn-con .main-btn:hover {
   transition: all 0.4s ease-out;
+  cursor: pointer;
 }
-.main-btn:hover::before {
+.btn-con .main-btn:hover::before {
   width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
   transform: translateX(0);
   transition: all 0.4s ease-out;
+}
+
+.btn-con-about-page {
+  justify-content: flex-start;
 }
 
 .main-title {
@@ -713,7 +776,6 @@ section {
   }
   .header-content .left-header .image {
     margin: 0 auto;
-    margin-top: 40px;
     width: 50%;
   }
   .controls {
@@ -809,6 +871,15 @@ section {
   }
 }
 @media screen and (max-width: 660px) {
+  .btns-con {
+    display: flex;
+    flex-direction: column;
+  }
+  .btns-con .btn-con {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
   }

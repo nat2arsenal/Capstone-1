@@ -30,7 +30,7 @@
   }
   .header-content .left-header .image {
     margin: 0 auto;
-    margin-top: 40px;
+    // margin-top: 40px;
     width: 50%;
   }
 
@@ -150,6 +150,16 @@
   }
 }
 @media screen and (max-width: 660px) {
+  .btns-con {
+    display: flex;
+    flex-direction: column;
+    .btn-con {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  }
+
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
   }
