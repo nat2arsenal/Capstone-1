@@ -217,61 +217,6 @@ section {
         filter: grayscale(0);
       }
 
-      // .hover-items {
-      //   width: 100%;
-      //   // height: 300px;
-      //   background-color: var(--color-secondary);
-      //   position: absolute;
-      //   left: 0;
-      //   top: 0;
-      //   border-radius: 15px 15px 0 0;
-      //   display: flex;
-      //   justify-content: center;
-      //   align-items: center;
-      //   flex-direction: column;
-      //   opacity: 100;
-      //   transform: scale(0);
-      //   transition: all 0.4s ease-in-out;
-      //   .icons {
-      //     display: flex;
-      //     justify-content: center;
-      //     align-items: center;
-      //     .icon {
-      //       background-color: var(--color-primary);
-      //       border-radius: 50%;
-      //       width: 50px;
-      //       height: 50px;
-      //       display: flex;
-      //       align-items: center;
-      //       justify-content: center;
-      //       margin: 0 1rem;
-      //       cursor: pointer;
-      //       transition: all 0.4s ease-in-out;
-      //       i {
-      //         font-size: 1.5rem;
-      //         color: var(--color-white);
-      //         margin: 0 1rem;
-      //       }
-      //       p {
-      //         display: none;
-      //       }
-      //       &:hover {
-      //         background-color: var(--color-white);
-      //         position: relative;
-      //         i {
-      //           color: var(--color-primary);
-      //         }
-      //         p {
-      //           display: block;
-      //           position: absolute;
-      //           bottom: -4rem;
-      //           text-align: center;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
-
       .hover-items {
         display: none;
       }
