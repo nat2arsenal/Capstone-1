@@ -152,9 +152,9 @@
   .btns-con {
     display: flex;
     flex-direction: column;
+    align-items: center;
     .btn-con {
       width: 100%;
-      justify-content: center;
       margin-bottom: 1rem;
     }
   }

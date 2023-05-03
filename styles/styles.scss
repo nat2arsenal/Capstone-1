@@ -8,7 +8,7 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #66e0f5;
-  --color-white: #ffffff;
+  --color-text: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -23,8 +23,8 @@
 
 .light-mode {
   --color-primary: #e4e4e4;
-  --color-secondary: #854cff;
-  --color-white: #454e56;
+  --color-secondary: #0d6efd;
+  --color-text: #090a0a;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #6c7983;
@@ -39,7 +39,7 @@ body {
   background-color: var(--color-primary);
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
-  color: var(--color-white);
+  color: var(--color-text);
   transition: all 0.4s ease-in-out;
   scroll-behavior: smooth;
 
@@ -58,7 +58,7 @@ a {
 
 header {
   min-height: 100vh;
-  color: var(--color-white);
+  color: var(--color-text);
   overflow: hidden;
   padding: 0 !important;
 }
@@ -144,7 +144,7 @@ section {
     background-color: var(--color-secondary);
     transition: all 0.4s ease-in-out;
     i {
-      color: var(--color-white);
+      color: var(--color-text);
     }
   }
 }
@@ -256,11 +256,11 @@ section {
               transition: all 0.4s ease-in-out;
               i {
                 font-size: 1.5rem;
-                color: var(--color-white);
+                color: var(--color-text);
                 margin: 0 1rem;
               }
               &:hover {
-                background-color: var(--color-white);
+                background-color: var(--color-text);
                 position: relative;
                 i {
                   color: var(--color-primary);
@@ -302,7 +302,7 @@ section {
     p {
       line-height: 2rem;
       padding: 1rem;
-      color: var(--color-grey-1);
+      color: var(--color-text);
     }
 
     strong {
@@ -483,7 +483,7 @@ section {
         transition: all 0.4s ease-in-out;
         h3 {
           font-size: 1.5rem;
-          color: var(--color-white);
+          color: var(--color-text);
           margin-bottom: 1.5rem;
         }
         .icons {
@@ -503,14 +503,14 @@ section {
             transition: all 0.4s ease-in-out;
             i {
               font-size: 1.5rem;
-              color: var(--color-white);
+              color: var(--color-text);
               margin: 0 1rem;
             }
             p {
               display: none;
             }
             &:hover {
-              background-color: var(--color-white);
+              background-color: var(--color-text);
               position: relative;
               i {
                 color: var(--color-primary);
@@ -528,23 +528,35 @@ section {
     }
 
     .project-text {
+      height: 100%;
       padding: 1.1rem;
       border-top: 8px solid var(--color-secondary);
       border-radius: 0 0 15px 15px;
-      h4 {
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 0.7rem;
-        transition: all 0.4s ease-in-out;
-        cursor: pointer;
-        &:hover {
-          color: var(--color-secondary);
+      display: grid;
+      grid-template-rows: 100px auto;
+      overflow: hidden;
+      .project-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h4 {
+          text-align: center;
+          font-size: 1.5rem;
+          margin-bottom: 0.7rem;
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            color: var(--color-secondary);
+          }
         }
       }
-      p {
-        color: var(--color-grey-2);
-        line-height: 2rem;
-        padding-bottom: 1rem;
+      .project-description {
+        // background-color: green;
+        p {
+          color: var(--color-grey-2);
+          line-height: 2rem;
+          padding-bottom: 1rem;
+        }
       }
     }
   }
@@ -602,7 +614,7 @@ section {
       a {
         display: flex;
         align-items: center;
-        color: var(--color-white);
+        color: var(--color-text);
         background-color: var(--color-grey-5);
         cursor: pointer;
         justify-content: center;
@@ -642,7 +654,7 @@ section {
         border: none;
         background-color: var(--color-grey-5);
         width: 100%;
-        color: var(--color-white);
+        color: var(--color-text);
         resize: none;
       }
     }
@@ -663,7 +675,7 @@ section {
         align-items: center;
         width: 100%;
         background-color: var(--color-grey-5);
-        color: var(--color-white);
+        color: var(--color-text);
         border: 1px solid var(--color-secondary);
         border-radius: 25px;
         padding: 1rem 0;

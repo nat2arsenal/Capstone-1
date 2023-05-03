@@ -8,7 +8,7 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #66e0f5;
-  --color-white: #ffffff;
+  --color-text: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -23,8 +23,8 @@
 
 .light-mode {
   --color-primary: #e4e4e4;
-  --color-secondary: #6d5ce8;
-  --color-white: #454e56;
+  --color-secondary: #0d6efd;
+  --color-text: #090a0a;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #6c7983;
@@ -39,7 +39,7 @@ body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
-  color: var(--color-white);
+  color: var(--color-text);
   transition: all 0.4s ease-in-out;
   scroll-behavior: smooth;
 }
@@ -57,7 +57,7 @@ a {
 
 header {
   min-height: 100vh;
-  color: var(--color-white);
+  color: var(--color-text);
   overflow: hidden;
   padding: 0 !important;
 }
@@ -142,7 +142,7 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .controls .active-btn i {
-  color: var(--color-white);
+  color: var(--color-text);
 }
 
 .theme-btn {
@@ -255,11 +255,11 @@ section {
 }
 .header-content .left-header .image:hover .hover-items .icons .icon i {
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: var(--color-text);
   margin: 0 1rem;
 }
 .header-content .left-header .image:hover .hover-items .icons .icon:hover {
-  background-color: var(--color-white);
+  background-color: var(--color-text);
   position: relative;
 }
 .header-content .left-header .image:hover .hover-items .icons .icon:hover i {
@@ -294,7 +294,7 @@ section {
 .about-container .about p {
   line-height: 2rem;
   padding: 1rem;
-  color: var(--color-grey-1);
+  color: var(--color-text);
 }
 .about-container .about strong {
   margin-right: 5px;
@@ -476,7 +476,7 @@ section {
 }
 .portfolios .portfolio-item .project-image .hover-items h3 {
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: var(--color-text);
   margin-bottom: 1.5rem;
 }
 .portfolios .portfolio-item .project-image .hover-items .icons {
@@ -498,14 +498,14 @@ section {
 }
 .portfolios .portfolio-item .project-image .hover-items .icons .icon i {
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: var(--color-text);
   margin: 0 1rem;
 }
 .portfolios .portfolio-item .project-image .hover-items .icons .icon p {
   display: none;
 }
 .portfolios .portfolio-item .project-image .hover-items .icons .icon:hover {
-  background-color: var(--color-white);
+  background-color: var(--color-text);
   position: relative;
 }
 .portfolios .portfolio-item .project-image .hover-items .icons .icon:hover i {
@@ -518,21 +518,30 @@ section {
   text-align: center;
 }
 .portfolios .portfolio-item .project-text {
+  height: 100%;
   padding: 1.1rem;
   border-top: 8px solid var(--color-secondary);
   border-radius: 0 0 15px 15px;
+  display: grid;
+  grid-template-rows: 100px auto;
+  overflow: hidden;
 }
-.portfolios .portfolio-item .project-text h4 {
+.portfolios .portfolio-item .project-text .project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolios .portfolio-item .project-text .project-title h4 {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
-.portfolios .portfolio-item .project-text h4:hover {
+.portfolios .portfolio-item .project-text .project-title h4:hover {
   color: var(--color-secondary);
 }
-.portfolios .portfolio-item .project-text p {
+.portfolios .portfolio-item .project-text .project-description p {
   color: var(--color-grey-2);
   line-height: 2rem;
   padding-bottom: 1rem;
@@ -589,7 +598,7 @@ section {
 .contact-content-con .top-contact .contact-icon a {
   display: flex;
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-text);
   background-color: var(--color-grey-5);
   cursor: pointer;
   justify-content: center;
@@ -628,7 +637,7 @@ section {
   border: none;
   background-color: var(--color-grey-5);
   width: 100%;
-  color: var(--color-white);
+  color: var(--color-text);
   resize: none;
 }
 .contact-content-con .bottom-contact .i-c-2 {
@@ -649,7 +658,7 @@ section {
   align-items: center;
   width: 100%;
   background-color: var(--color-grey-5);
-  color: var(--color-white);
+  color: var(--color-text);
   border: 1px solid var(--color-secondary);
   border-radius: 25px;
   padding: 1rem 0;
@@ -874,10 +883,10 @@ section {
   .btns-con {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .btns-con .btn-con {
     width: 100%;
-    justify-content: center;
     margin-bottom: 1rem;
   }
   .portfolios {
