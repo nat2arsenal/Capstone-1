@@ -340,16 +340,16 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 80%;
+  width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 80%;
+  width: 85%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 70%;
+  width: 85%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 50%;
+  width: 65%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .node {
   width: 70%;
@@ -679,7 +679,6 @@ section {
 
 .btn-con {
   display: flex;
-  align-self: flex-start;
   justify-content: center;
   margin-top: 1rem;
 }
@@ -710,7 +709,7 @@ section {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   transform: translateX(100%);
   transition: all 0.4s ease-out;
   z-index: -1;

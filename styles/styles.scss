@@ -346,16 +346,16 @@ section {
             width: 60%;
           }
           .html {
-            width: 80%;
+            width: 90%;
           }
           .css {
-            width: 80%;
+            width: 85%;
           }
           .js {
-            width: 70%;
+            width: 85%;
           }
           .react {
-            width: 50%;
+            width: 65%;
           }
           .node {
             width: 70%;
@@ -699,7 +699,6 @@ section {
 
 .btn-con {
   display: flex;
-  align-self: flex-start;
   justify-content: center;
   margin-top: 1rem;
   .main-btn {
@@ -728,7 +727,7 @@ section {
       content: '';
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       transform: translateX(100%);
       transition: all 0.4s ease-out;
       z-index: -1;
