@@ -33,7 +33,7 @@
       alert('Failed, please fill in all forms and click send again.');
     } else {
       emailjs
-        .send('service_iqd2onr', 'template_8s4wkpa', params)
+        .send('service_fd4zezv', 'template_8s4wkpa', params)
         .then(function (res) {
           if (res.status === 200) {
             alert(
