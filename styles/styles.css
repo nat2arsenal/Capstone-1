@@ -69,12 +69,12 @@ a img:hover {
   min-height: 100vh;
 }
 
-section {
+section.banner {
   padding: 3rem 18rem;
 }
 
 section:not(.banner) {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   width: 100%;
   max-width: 1140px;
   margin: auto;
@@ -787,9 +787,31 @@ section:not(.banner) {
     font-size: 4rem;
   }
   .container {
-    padding: 7rem 3rem;
+    padding: 60px 20px;
   }
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .banner .banner-content {
+    padding: 40px 20px;
+  }
+  .banner .banner-content .right-banner {
+    padding: 0;
+  }
+  .banner .banner-content .right-banner .intro-headline {
+    font-size: 1.5rem;
+  }
+  .timeline .timeline-item {
+    padding-inline: 15px;
+    border-left: none;
+  }
+  .timeline .timeline-item .tl-icon {
+    display: none;
+  }
+  .portfolios .portfolio-item .project-image {
+    height: 200px;
+  }
+  .contact-content-con .top-contact h4 {
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */

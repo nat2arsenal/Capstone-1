@@ -71,11 +71,11 @@ a {
   }
 }
 
-section {
+section.banner {
   padding: 3rem 18rem;
 }
 section:not(.banner) {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   width: 100%;
   max-width: 1140px;
   margin: auto;

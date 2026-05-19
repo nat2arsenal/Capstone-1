@@ -114,9 +114,31 @@
     }
   }
   .container {
-    padding: 7rem 3rem;
+    padding: 60px 20px;
   }
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .banner .banner-content {
+    padding: 40px 20px;
+    .right-banner {
+      padding: 0;
+      .intro-headline {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .timeline .timeline-item {
+    padding-inline: 15px;
+    border-left: none;
+    .tl-icon {
+      display: none;
+    }
+  }
+  .portfolios .portfolio-item .project-image {
+    height: 200px;
+  }
+  .contact-content-con .top-contact h4 {
+    text-align: center;
   }
 }
